@@ -16,7 +16,7 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor(staticName = "build")
 @Table(name = "Intersted")
-public class Intersted {
+public class Interested {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
