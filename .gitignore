@@ -1,33 +1,20 @@
-HELP.md
+# .gitignore
+
+# Exclude build output
 target/
+
+# Exclude IDE and editor-specific files
+/.mvn/wrapper/maven-wrapper.jar
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+/.mvn/
+!.mvn/
+/.mvn/**/
+!/.mvn/**/maven-wrapper.jar
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
+# Exclude build directories within source directories
+**/src/main/**/target/
+!**/src/main/**/
+!**/src/main/**/target/**
+**/src/test/**/target/
+!**/src/test/**/
+!**/src/test/**/target/**
