@@ -1,0 +1,5 @@
+com\leadify\crm\controller\FinancialController.class
+com\leadify\crm\repository\InterestedRepository.class
+com\leadify\crm\service\InterestedService.class
+com\leadify\crm\entity\Interested.class
+com\leadify\crm\ApiCrmLeadifyApplication.class

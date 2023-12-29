@@ -1,8 +1,5 @@
 # .gitignore
 
-# Exclude build output
-target/
-
 # Exclude IDE and editor-specific files
 /.mvn/wrapper/maven-wrapper.jar
 !.mvn/wrapper/maven-wrapper.jar
