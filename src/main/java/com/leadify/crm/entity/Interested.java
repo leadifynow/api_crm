@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import jakarta.persistence.*;
 
@@ -30,6 +31,7 @@ public class Interested {
     private String email;
     @Column(nullable = false)
     private String campaign;
+    @JsonFormat(pattern = "yyyy-MM-dd H:mm:ss")
     @Column(nullable = false)
     private LocalDateTime interest_date;
     @Column(nullable = false)
