@@ -24,7 +24,7 @@ public class Interested {
     private String first_name;
     @Column(nullable = true)
     private String second_name;
-    @Column(nullable = true)
+    @Column(nullable = true, columnDefinition = "VARCHAR(255) DEFAULT NULL")
     private String business_name;
     @Column(nullable = false)
     private String email;
