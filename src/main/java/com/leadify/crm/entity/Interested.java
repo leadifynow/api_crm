@@ -15,12 +15,12 @@ import jakarta.persistence.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor(staticName = "build")
-@Table(name = "Intersted")
+@Table(name = "Interested ")
 public class Interested {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String first_name;
     @Column(nullable = true)
     private String second_name;
@@ -30,12 +30,13 @@ public class Interested {
     private String email;
     @Column(nullable = false)
     private String campaign;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private LocalDateTime interest_date;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private Boolean booked;
-    @Column(nullable = false)
-    private String stage;
+    @ManyToOne
+    @JoinColumn(name = "stage_id", nullable = false)
+    private Stage stage_id;
     @Column(nullable = true)
     private String notes;
     @CreationTimestamp

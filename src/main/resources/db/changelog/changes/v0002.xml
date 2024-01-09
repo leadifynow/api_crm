@@ -1,0 +1,12 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+    <changeSet id="V0002" author="your_name">
+        <sql>ALTER TABLE interested MODIFY COLUMN first_name VARCHAR(255) NULL;</sql>
+        <sql>ALTER TABLE interested MODIFY COLUMN interest_date TIMESTAMP NULL;</sql>
+        <sql>ALTER TABLE interested MODIFY COLUMN booked BOOLEAN NULL;</sql>
+    </changeSet>
+
+</databaseChangeLog>
