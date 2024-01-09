@@ -9,6 +9,6 @@
         <modifyDataType
                 columnName="stage_id"
                 newDataType="bigint"
-                tableName="Interested"/>
+                tableName="interested"/>
     </changeSet>
 </databaseChangeLog>

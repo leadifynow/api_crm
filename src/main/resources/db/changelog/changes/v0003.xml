@@ -7,7 +7,7 @@
     <changeSet id="V0003" author="your_name">
         <!-- Rename column from "stage" to "stage_id" in Interested table -->
         <renameColumn
-                tableName="Interested"
+                tableName="interested"
                 oldColumnName="stage"
                 newColumnName="stage_id"
                 columnDataType="VARCHAR(255)"/>
