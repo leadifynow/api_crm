@@ -15,6 +15,3 @@
 **/src/test/**/target/
 !**/src/test/**/
 !**/src/test/**/target/**
-
-# Exclude application properties
-/src/main/resources/application.properties
