@@ -4,3 +4,4 @@ com\leadify\crm\ApiCrmLeadifyApplication.class
 com\leadify\crm\entity\Stage.class
 com\leadify\crm\repository\InterestedRepository.class
 com\leadify\crm\service\InterestedService.class
+com\leadify\crm\repository\StageRepository.class
